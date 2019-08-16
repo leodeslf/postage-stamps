@@ -1,0 +1,64 @@
+$spec-color--a: #295db2;
+
+#stamp-1 {
+  .layer--labels {
+    outline: 1px solid rgb(138, 107, 72);
+    outline-offset: -1px;
+    display: flex;
+    flex-direction: column;
+    //display: none;
+  }
+  .label--name {
+    color: white;
+    font-family: "Caveat", cursive;
+    margin: 9px 9px 9px auto;
+    font-size: 3.25rem;
+    line-height: 0.85em;
+    display: flex;
+    padding: 0 5px;
+    text-align: right;
+    position: relative;
+  }
+  .label--name__bold {
+    position: absolute;
+    bottom: -85%;
+    right: 5px;
+    color: rgb(138, 107, 72);
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .label--cost {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 1.1rem;
+    //font-weight: 300;
+    font-size: 6rem;
+    //background-color: rgba(184, 135, 11, 0.384);
+    line-height: 0.85em;
+    display: flex;
+  }
+  .label--cost__cent {
+    font-size: 0.25em;
+    margin-top: auto;
+    margin-bottom: 9px;
+    line-height: 0.85em;
+    font-family: inherit;
+    font-weight: 400;
+  }
+  .label--owner {
+    color: white;
+    position: absolute;
+    bottom: 7px;
+    left: 5px;
+    font-size: 1.25rem;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    letter-spacing: -6px;
+    line-height: 0.66em;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+  }
+}

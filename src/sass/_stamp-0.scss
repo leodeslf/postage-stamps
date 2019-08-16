@@ -1,0 +1,58 @@
+$spec-color--a: #202020;
+
+#stamp-0 {
+  .layer--labels {
+    outline: 1px solid $spec-color--a;
+    outline-offset: -1px;
+  }
+  .label--name {
+    color: $spec-color--a;
+    float: right;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2.5rem;
+    line-height: 0.85em;
+    text-transform: uppercase;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+  .label--name__bold {
+    color: inherit;
+    font-size: inherit;
+    font-family: "Saira Stencil One", sans-serif;
+  }
+  .label--cost {
+    bottom: 5px;
+    color: $spec-color--a;
+    display: flex;
+    font-family: "Libre Baskerville", serif;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 0.85em;
+    position: absolute;
+    right: 5px;
+  }
+  .label--cost__cent {
+    color: inherit;
+    font-family: inherit;
+    font-size: 0.25em;
+    font-weight: inherit;
+  }
+  .label--owner {
+    background-color: $spec-color--a;
+    bottom: 0px;
+    box-sizing: border-box;
+    color: $bg;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.155rem;
+    height: $stamp-height;
+    line-height: 1.25em;
+    left: 0px;
+    padding-top: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    transform: rotateZ(180deg);
+    width: max-content;
+    writing-mode: vertical-lr;
+  }
+}

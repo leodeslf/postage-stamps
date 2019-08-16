@@ -1,0 +1,142 @@
+@mixin stamp-border {
+  border: 20px solid transparent;
+  border-image: url(../images/border.png) 20 round;
+  filter: drop-shadow(0 1px 2.5px rgb(180, 180, 180));
+}
+
+.stamp {
+  width: min-content;
+  height: min-content;
+  padding: 2rem;
+  position: relative;
+}
+
+.stamp__chk-flip {
+  display: none;
+}
+.stamp__chk-flip:checked ~ .stamp__front-face {
+  transform: perspective(1000px) rotateY(180deg);
+}
+.stamp__chk-flip:checked ~ .stamp__back-face {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.stamp__lbl-flip {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.stamp__front-face,
+.stamp__back-face {
+  transform-style: preserve-3d;
+  @include stamp-border;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transition-duration: $med-time;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+.stamp__front-face {
+  position: relative;
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.stamp__back-face {
+  position: absolute;
+  top: 2rem;
+  transform: perspective(1000px) rotateY(-180deg);
+}
+
+.stamp__layers {
+  border: $stamp-padding solid $bg;
+  height: $stamp-height;
+  position: relative;
+  width: $stamp-width;
+}
+
+.layer--front {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: $stamp-width;
+  height: $stamp-height;
+}
+
+.front {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.layer--back {
+  pointer-events: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: $stamp-width;
+  height: $stamp-height;
+}
+
+.back {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.layer--labels {
+  height: $stamp-height;
+  position: absolute;
+  top: 0;
+  width: $stamp-width;
+}
+
+/* 
+Labels structure:
+
+.layer--labels {
+}
+.label--name {
+}
+.label--name__bold {
+}
+.label--cost {
+}
+.label--cost__cent {
+}
+.label--owner {
+}
+ */
+
+.label--date {
+  bottom: -16px;
+  font-size: $font-size--small;
+  font-weight: 600;
+  position: absolute;
+  right: 0px;
+}
+
+.back-face__content {
+  background-color: $bg;
+  border: $stamp-padding solid $bg;
+  height: $stamp-height;
+  width: $stamp-width;
+}
+.back-face__content .desc,
+.back-face__content .cameraman {
+  //color: $color-b;
+  font-family: "Libre Baskerville", serif;
+  font-size: $font-size--small;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1023px) {
+  /* .stamp-gallery__stamp {
+  } */
+}

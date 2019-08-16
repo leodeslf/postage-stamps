@@ -1,0 +1,31 @@
+$bg: #ffffff;
+
+$color-a: #0a0a0a;
+$color-b: #242424;
+$color-c: #e4e4e4;
+
+$font-size--normal: 16px; // 1rem
+$font-size--small: 12px; // 0.75rem
+
+$stamp-padding: 10px;
+$stamp-width: 340px;
+$stamp-height: 210px;
+
+$fast-time: 250ms;
+$med-time: 360ms;
+$slow-time: 480ms;
+
+/* font-family: 'Saira Stencil One', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+.cosax {
+  position: absolute;
+  bottom: -3rem;
+}
+
+.cosay {
+  position: absolute;
+  bottom: -6rem;
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": 0,
+    "image": {
+      "double": true,
+      "front": "./stamp-0/b-2-spirit.png",
+      "back": "./stamp-0/b-2-spirit-bg.png",
+      "frontMap": "./stamp-0/b-2-spirit-dm.png",
+      "backMap": "./stamp-0/b-2-spirit-bg-dm.png"
+    },
+    "nameStart": "",
+    "nameBold": "B-2",
+    "nameFinish": "Spirit",
+    "cost": "25",
+    "date": "1989",
+    "owner": "United States Air Force",
+    "desc": "Vista lateral del bombardero furtivo Northrop Grumman B-2 Spirit.",
+    "cameraMan": "Foto por Sgt. Bennie J. Davis III, USAF.",
+    "src": "https://commons.wikimedia.org/wiki/File:B-2A_Spirit.jpg"
+  },
+  {
+    "id": 1,
+    "image": {
+      "double": false,
+      "back": "./stamp-1/red-footed-booby.png",
+      "backMap": "./stamp-1/red-footed-booby-dm.png"
+    },
+    "nameStart": "Sula",
+    "nameBold": "sula",
+    "nameFinish": "",
+    "cost": "5",
+    "date": "1766",
+    "owner": "NOAA",
+    "desc": "Sula Sula (o Picotero Patirrojo) de las Islas Galápagos.",
+    "cameraMan": "Foto por Christopher Hoefer, National Ocean and Atmospheric Administration.",
+    "src": "https://origin-apps-pifsc.fisheries.noaa.gov/gallery/cruises/hiceas/2017/juvenile_red-footed_booby_cjh_med.jpg"
+  },
+  {
+    "id": 2,
+    "image": {
+      "double": true,
+      "front": "./stamp-2/duomo.png",
+      "back": "./stamp-2/duomo-bg.png",
+      "frontMap": "./stamp-2/duomo-dm.png",
+      "backMap": "./stamp-2/duomo-bg-dm.png"
+    },
+    "nameStart": "Duomo di Firenze",
+    "nameBold": "",
+    "nameFinish": "",
+    "cost": "45",
+    "date": "1436",
+    "owner": "Brunelleschi",
+    "desc": "Catedral de Santa María del Fiore (El Duomo de Florencia), luciendo la cúpula de Brunelleschi.",
+    "cameraMan": "Foto por Francesco Riccardo Iacomino.",
+    "src": "https://viajes.nationalgeographic.com.es/medio/2015/09/17/florence_francesco_riccardo_iacomino_1000x666.jpg"
+  }
+]
