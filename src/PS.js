@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import STAMPS from './apis/stamps.json';
 import Stamp from './Components/Stamp.js';
 
-export default class APS extends Component {
+export default class PS extends Component {
   /* constructor(props) {
     super(props);
     this.state = {
@@ -11,8 +11,8 @@ export default class APS extends Component {
 
   render() {
     return (
-      <main className="APS">
-        <section className="APS__content">
+      <main className="PS">
+        <section className="PS__content">
           <h1>Postage Stamps</h1>
           <div className="stamp-gallery">
             {STAMPS.map(item => (

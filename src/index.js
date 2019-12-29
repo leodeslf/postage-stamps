@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './sass/main.css';
-import APS from './APS';
+import PS from './PS';
 
-render(<APS />, document.getElementById('root'));
+render(<PS />, document.getElementById('root'));

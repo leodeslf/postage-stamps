@@ -3,7 +3,7 @@ import * as PIXI from 'pixi.js';
 
 const W = 340;
 const H = 210;
-const FACTOR = 9;
+const FACTOR = 10.25;
 //const DIVISOR = window.innerWidth * 0.045;
 
 export default class Stamp extends Component {
