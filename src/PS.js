@@ -18,20 +18,8 @@ export default class PS extends Component {
             {STAMPS.map(item => (
               <Stamp
                 key={item.id}
-                id={item.id}
-                double={item.image.double}
-                front={item.image.front}
-                back={item.image.back}
-                frontMap={item.image.frontMap}
-                backMap={item.image.backMap}
-                nameStart={item.nameStart}
-                nameBold={item.nameBold}
-                nameFinish={item.nameFinish}
-                cost={item.cost}
-                date={item.date}
-                owner={item.owner}
-                desc={item.desc}
-                cameraMan={item.cameraMan} />
+                {...item}
+              />
             ))}
           </div>
         </section>

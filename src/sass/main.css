@@ -69,6 +69,11 @@ h1 {
   padding: 1rem;
 }
 
+@media screen and (max-width: 1023px) {
+  /* .stamp-gallery {
+  } */
+}
+
 .stamp {
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -147,7 +152,7 @@ h1 {
   width: 340px;
 }
 
-.layer--front {
+.layer--frontImg {
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -156,13 +161,13 @@ h1 {
   height: 210px;
 }
 
-.front {
+.frontImg {
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-.layer--back {
+.layer--backImg {
   pointer-events: none;
   overflow: hidden;
   position: absolute;
@@ -171,7 +176,7 @@ h1 {
   height: 210px;
 }
 
-.back {
+.backImg {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -227,12 +232,12 @@ Labels structure:
   } */
 }
 
-#stamp-0 .layer--labels {
+#stamp-1 .layer--labels {
   outline: 1px solid #202020;
   outline-offset: -1px;
 }
 
-#stamp-0 .label--name {
+#stamp-1 .label--name {
   color: #202020;
   float: right;
   font-family: "Roboto Condensed", sans-serif;
@@ -244,13 +249,13 @@ Labels structure:
   top: 5px;
 }
 
-#stamp-0 .label--name__bold {
+#stamp-1 .label--name__bold {
   color: inherit;
   font-size: inherit;
   font-family: "Saira Stencil One", sans-serif;
 }
 
-#stamp-0 .label--cost {
+#stamp-1 .label--cost {
   bottom: 5px;
   color: #202020;
   display: -webkit-box;
@@ -264,14 +269,14 @@ Labels structure:
   right: 5px;
 }
 
-#stamp-0 .label--cost__cent {
+#stamp-1 .label--cost__cent {
   color: inherit;
   font-family: inherit;
   font-size: 0.25em;
   font-weight: inherit;
 }
 
-#stamp-0 .label--owner {
+#stamp-1 .label--owner {
   background-color: #202020;
   bottom: 0px;
   -webkit-box-sizing: border-box;
@@ -295,7 +300,7 @@ Labels structure:
           writing-mode: vertical-lr;
 }
 
-#stamp-1 .layer--labels {
+#stamp-2 .layer--labels {
   outline: 1px solid #8a6b48;
   outline-offset: -1px;
   display: -webkit-box;
@@ -307,7 +312,7 @@ Labels structure:
           flex-direction: column;
 }
 
-#stamp-1 .label--name {
+#stamp-2 .label--name {
   color: white;
   font-family: "Caveat", cursive;
   margin: 9px 9px 9px auto;
@@ -321,7 +326,7 @@ Labels structure:
   position: relative;
 }
 
-#stamp-1 .label--name__bold {
+#stamp-2 .label--name__bold {
   position: absolute;
   bottom: -85%;
   right: 5px;
@@ -331,7 +336,7 @@ Labels structure:
   line-height: inherit;
 }
 
-#stamp-1 .label--cost {
+#stamp-2 .label--cost {
   font-family: "Roboto Condensed", sans-serif;
   color: white;
   position: absolute;
@@ -344,7 +349,7 @@ Labels structure:
   display: flex;
 }
 
-#stamp-1 .label--cost__cent {
+#stamp-2 .label--cost__cent {
   font-size: 0.25em;
   margin-top: auto;
   margin-bottom: 9px;
@@ -353,7 +358,7 @@ Labels structure:
   font-weight: 400;
 }
 
-#stamp-1 .label--owner {
+#stamp-2 .label--owner {
   color: white;
   position: absolute;
   bottom: 7px;
@@ -369,13 +374,18 @@ Labels structure:
   text-transform: uppercase;
 }
 
-#stamp-2 .layer--labels {
+#stamp-3 {
+  /* .label--name__bold {
+  } */
+}
+
+#stamp-3 .layer--labels {
   outline: 1px solid cornflowerblue;
   outline-offset: -1px;
   z-index: 2;
 }
 
-#stamp-2 .label--name {
+#stamp-3 .label--name {
   position: absolute;
   top: 12px;
   left: 9px;
@@ -386,7 +396,7 @@ Labels structure:
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 4px darkslateblue;
 }
 
-#stamp-2 .label--cost {
+#stamp-3 .label--cost {
   bottom: 5px;
   font-family: "DM Serif Text", serif;
   font-size: 6rem;
@@ -400,7 +410,7 @@ Labels structure:
   display: flex;
 }
 
-#stamp-2 .label--cost__cent {
+#stamp-3 .label--cost__cent {
   font-size: 0.25em;
   margin: auto 0;
   line-height: 0.85em;
@@ -408,7 +418,7 @@ Labels structure:
   text-shadow: inherit;
 }
 
-#stamp-2 .label--owner {
+#stamp-3 .label--owner {
   position: absolute;
   bottom: 9px;
   right: 16px;

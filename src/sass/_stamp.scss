@@ -60,7 +60,7 @@
   width: $stamp-width;
 }
 
-.layer--front {
+.layer--frontImg {
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -69,13 +69,13 @@
   height: $stamp-height;
 }
 
-.front {
+.frontImg {
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-.layer--back {
+.layer--backImg {
   pointer-events: none;
   overflow: hidden;
   position: absolute;
@@ -84,7 +84,7 @@
   height: $stamp-height;
 }
 
-.back {
+.backImg {
   position: absolute;
   top: 0px;
   right: 0px;

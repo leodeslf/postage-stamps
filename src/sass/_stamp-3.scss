@@ -1,0 +1,51 @@
+$t-sh: 0 0 1px black, 0 0 1px black, 0 0 4px darkslateblue;
+
+#stamp-3 {
+  .layer--labels {
+    outline: 1px solid cornflowerblue;
+    outline-offset: -1px;
+    z-index: 2;
+  }
+  .label--name {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.33rem;
+    line-height: 0.85em;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 4px darkslateblue;
+  }
+  /* .label--name__bold {
+  } */
+  .label--cost {
+    bottom: 5px;
+    font-family: "DM Serif Text", serif;
+    font-size: 6rem;
+    line-height: 0.8em;
+    position: absolute;
+    color: white;
+    text-shadow: $t-sh;
+    left: 9px;
+    display: flex;
+  }
+  .label--cost__cent {
+    font-size: 0.25em;
+    margin: auto 0;
+    line-height: 0.85em;
+    font-family: inherit;
+    text-shadow: inherit;
+  }
+  .label--owner {
+    position: absolute;
+    bottom: 9px;
+    right: 16px;
+    color: white;
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 3.25rem;
+    line-height: 0.85em;
+    transform: rotateZ(-5deg);
+    text-shadow: 0 0 2px black, 0 0 3px black, 0 0 4px orange;
+    display: inline;
+  }
+}

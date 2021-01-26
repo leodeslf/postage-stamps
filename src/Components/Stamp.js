@@ -10,11 +10,11 @@ export default class Stamp extends Component {
   componentDidMount() {
     // App
     const BACK_APP = new PIXI.Application({ width: W, height: H });
-    BACK_APP.view.className = 'back';
-    document.querySelector(`#stamp-${this.props.id} .layer--back`).appendChild(BACK_APP.view);
+    BACK_APP.view.className = 'backImg';
+    document.querySelector(`#stamp-${this.props.id} .layer--backImg`).appendChild(BACK_APP.view);
     // Image
-    const BACK = new PIXI.Sprite.from(this.props.back);
-    const BACK_MAP = new PIXI.Sprite.from(this.props.backMap);
+    const BACK = new PIXI.Sprite.from(this.props.backImg);
+    const BACK_MAP = new PIXI.Sprite.from(this.props.backMapImg);
     BACK_APP.stage.addChild(BACK, BACK_MAP);
     // Displacement
     const BACK_DIS_FIL = new PIXI.filters.DisplacementFilter(BACK_MAP);
@@ -22,7 +22,7 @@ export default class Stamp extends Component {
     BACK_DIS_FIL.scale.x = 0;
     BACK_DIS_FIL.scale.y = 0;
 
-    if (!this.props.double) {
+    if (!this.props.doubleImg) {
       window.addEventListener('mousemove', e => {
         // Interaction
         BACK_DIS_FIL.scale.x = (((e.clientX / window.innerWidth) - 0.5) * 2) * FACTOR;
@@ -32,11 +32,12 @@ export default class Stamp extends Component {
       // Add "background" staff
       // App
       const FRONT_APP = new PIXI.Application({ width: W, height: H, transparent: true });
-      FRONT_APP.view.className = 'front';
-      document.querySelector(`#stamp-${this.props.id} .layer--front`).appendChild(FRONT_APP.view);
+      FRONT_APP.view.className = 'frontImg';
+      console.log(this.props)
+      document.querySelector(`#stamp-${this.props.id} .layer--frontImg`).appendChild(FRONT_APP.view);
       // Image
-      const FRONT = new PIXI.Sprite.from(this.props.front);
-      const FRONT_MAP = new PIXI.Sprite.from(this.props.frontMap);
+      const FRONT = new PIXI.Sprite.from(this.props.frontImg);
+      const FRONT_MAP = new PIXI.Sprite.from(this.props.frontMapImg);
       FRONT_APP.stage.addChild(FRONT, FRONT_MAP);
       // Displacement
       const FRONT_DIS_FIL = new PIXI.filters.DisplacementFilter(FRONT_MAP);
@@ -67,10 +68,10 @@ export default class Stamp extends Component {
         </label>
         <div className="stamp__front-face" id={`stamp-${this.props.id}`}>
           <div className="stamp__layers" id={`stamp__layers--${this.props.id}`}>
-            <div className="layer--front">
+            <div className="layer--frontImg">
               {/* view here */}
             </div>
-            <div className="layer--back">
+            <div className="layer--backImg">
               {/* view bg here */}
             </div>
             <div className="layer--labels">

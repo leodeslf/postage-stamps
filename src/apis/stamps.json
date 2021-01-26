@@ -1,13 +1,28 @@
 [
   {
     "id": 0,
-    "image": {
-      "double": true,
-      "front": "./stamp-0/b-2-spirit.png",
-      "back": "./stamp-0/b-2-spirit-bg.png",
-      "frontMap": "./stamp-0/b-2-spirit-dm.png",
-      "backMap": "./stamp-0/b-2-spirit-bg-dm.png"
-    },
+    "doubleImg": true,
+    "frontImg": "./postage-stamps/stamp-0/",
+    "backImg": "./postage-stamps/stamp-0/",
+    "frontMapImg": "./postage-stamps/stamp-0/",
+    "backMapImg": "./postage-stamps/stamp-0/",
+    "nameStart": "",
+    "nameBold": "",
+    "nameFinish": "",
+    "cost": "",
+    "date": "",
+    "owner": "",
+    "desc": "",
+    "cameraMan": "",
+    "src": ""
+  },
+  {
+    "id": 1,
+    "doubleImg": true,
+    "frontImg": "./postage-stamps/stamp-1/b-2-spirit.png",
+    "backImg": "./postage-stamps/stamp-1/b-2-spirit-bg.png",
+    "frontMapImg": "./postage-stamps/stamp-1/b-2-spirit-dm.png",
+    "backMapImg": "./postage-stamps/stamp-1/b-2-spirit-bg-dm.png",
     "nameStart": "",
     "nameBold": "B-2",
     "nameFinish": "Spirit",
@@ -19,12 +34,10 @@
     "src": "https://commons.wikimedia.org/wiki/File:B-2A_Spirit.jpg"
   },
   {
-    "id": 1,
-    "image": {
-      "double": false,
-      "back": "./stamp-1/red-footed-booby.png",
-      "backMap": "./stamp-1/red-footed-booby-dm.png"
-    },
+    "id": 2,
+    "doubleImg": false,
+    "backImg": "./postage-stamps/stamp-2/red-footed-booby.png",
+    "backMapImg": "./postage-stamps/stamp-2/red-footed-booby-dm.png",
     "nameStart": "Sula",
     "nameBold": "sula",
     "nameFinish": "",
@@ -36,14 +49,12 @@
     "src": "https://origin-apps-pifsc.fisheries.noaa.gov/gallery/cruises/hiceas/2017/juvenile_red-footed_booby_cjh_med.jpg"
   },
   {
-    "id": 2,
-    "image": {
-      "double": true,
-      "front": "./stamp-2/duomo.png",
-      "back": "./stamp-2/duomo-bg.png",
-      "frontMap": "./stamp-2/duomo-dm.png",
-      "backMap": "./stamp-2/duomo-bg-dm.png"
-    },
+    "id": 3,
+    "doubleImg": true,
+    "frontImg": "./postage-stamps/stamp-3/duomo.png",
+    "backImg": "./postage-stamps/stamp-3/duomo-bg.png",
+    "frontMapImg": "./postage-stamps/stamp-3/duomo-dm.png",
+    "backMapImg": "./postage-stamps/stamp-3/duomo-bg-dm.png",
     "nameStart": "Duomo di Firenze",
     "nameBold": "",
     "nameFinish": "",
