@@ -3,12 +3,6 @@ import STAMPS from './apis/stamps.json';
 import Stamp from './Components/Stamp.js';
 
 export default class PS extends Component {
-  /* constructor(props) {
-    super(props);
-    this.state = {
-    }
-  } */
-
   render() {
     return (
       <main className="PS">

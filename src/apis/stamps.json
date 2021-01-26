@@ -1,22 +1,5 @@
 [
   {
-    "id": 0,
-    "doubleImg": true,
-    "frontImg": "./postage-stamps/stamp-0/",
-    "backImg": "./postage-stamps/stamp-0/",
-    "frontMapImg": "./postage-stamps/stamp-0/",
-    "backMapImg": "./postage-stamps/stamp-0/",
-    "nameStart": "",
-    "nameBold": "",
-    "nameFinish": "",
-    "cost": "",
-    "date": "",
-    "owner": "",
-    "desc": "",
-    "cameraMan": "",
-    "src": ""
-  },
-  {
     "id": 1,
     "doubleImg": true,
     "frontImg": "./postage-stamps/stamp-1/b-2-spirit.png",
