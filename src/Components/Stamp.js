@@ -33,7 +33,6 @@ export default class Stamp extends Component {
       // App
       const FRONT_APP = new PIXI.Application({ width: W, height: H, transparent: true });
       FRONT_APP.view.className = 'frontImg';
-      console.log(this.props)
       document.querySelector(`#stamp-${this.props.id} .layer--frontImg`).appendChild(FRONT_APP.view);
       // Image
       const FRONT = new PIXI.Sprite.from(this.props.frontImg);
